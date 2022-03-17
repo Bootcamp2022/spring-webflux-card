@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"cardNumber\": \"1234567890123456\",\r\n    \"cvv\": \"111\",\r\n    \"expiryDate\": \"12/22\",\r\n    \"listAccountNumbers\": [\r\n        \"123\",\r\n        \"456\",\r\n        \"789\"\r\n    ]\r\n}",
+							"raw": "{\r\n    \"cardNumber\": \"1234567890123799\",\r\n    \"cvv\": \"111\",\r\n    \"expiryDate\": \"12/22\",\r\n    \"dni\": \"12345674\",\r\n    \"mainNumberAccount\": \"19135813408157\",\r\n    \"aditionalNumberAccounts\": [\r\n        \"19135813408063\"\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -65,7 +65,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8088/api/v1/debitCard/62335192427e812f7de5f563",
+							"raw": "http://localhost:8088/api/v1/debitCard/62339ab9ed0e1d39a4bdbca5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -75,7 +75,7 @@
 								"api",
 								"v1",
 								"debitCard",
-								"62335192427e812f7de5f563"
+								"62339ab9ed0e1d39a4bdbca5"
 							]
 						}
 					},
