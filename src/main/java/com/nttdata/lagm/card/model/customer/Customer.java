@@ -2,10 +2,8 @@ package com.nttdata.lagm.card.model.customer;
 
 import lombok.Data;
 
-import java.io.Serializable;
-
 @Data
-public class Customer implements Serializable {
+public class Customer {
     private String id;
     private String lastName;
     private String firstName;
