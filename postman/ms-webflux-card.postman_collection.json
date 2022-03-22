@@ -23,12 +23,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8088/api/v1/debitCard",
+							"raw": "http://localhost:8089/api/v1/debitCard",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8088",
+							"port": "8089",
 							"path": [
 								"api",
 								"v1",
@@ -44,12 +44,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8088/api/v1/debitCard",
+							"raw": "http://localhost:8089/api/v1/debitCard",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8088",
+							"port": "8089",
 							"path": [
 								"api",
 								"v1",
@@ -65,17 +65,40 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8088/api/v1/debitCard/62339ab9ed0e1d39a4bdbca5",
+							"raw": "http://localhost:8089/api/v1/debitCard/6233da9d35d48e09d55dda2e",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8088",
+							"port": "8089",
 							"path": [
 								"api",
 								"v1",
 								"debitCard",
-								"62339ab9ed0e1d39a4bdbca5"
+								"6233da9d35d48e09d55dda2e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCardNumber",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8089/api/v1/debitCard/cardNumber/1234567890123799",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"v1",
+								"debitCard",
+								"cardNumber",
+								"1234567890123799"
 							]
 						}
 					},
@@ -96,12 +119,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8088/api/v1/debitCard",
+							"raw": "http://localhost:8089/api/v1/debitCard",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8088",
+							"port": "8089",
 							"path": [
 								"api",
 								"v1",
@@ -117,12 +140,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8088/api/v1/debitCard/62335192427e812f7de5f563",
+							"raw": "http://localhost:8089/api/v1/debitCard/62335192427e812f7de5f563",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8088",
+							"port": "8089",
 							"path": [
 								"api",
 								"v1",

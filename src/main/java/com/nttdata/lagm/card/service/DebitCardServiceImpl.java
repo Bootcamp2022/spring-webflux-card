@@ -58,6 +58,11 @@ public class DebitCardServiceImpl implements DebitCardService {
         });
     }
 
+    @Override
+    public Mono<DebitCard> findByCardNumber(String cardNumber) {
+        return debitCardRepository.findByCardNumber(cardNumber);
+    }
+
     private Mono<Void> checkConditions(DebitCard debitCard) {
         return checkCardNumberNotExist(debitCard.getCardNumber())
             .mergeWith(checkIfCustomerExist(debitCard))

@@ -10,4 +10,5 @@ public interface DebitCardService {
     Flux<DebitCard> findAll();
     Mono<DebitCard> findById(String id);
     Mono<DebitCard> delete(String id);
+    Mono<DebitCard> findByCardNumber(String cardNumber);
 }
