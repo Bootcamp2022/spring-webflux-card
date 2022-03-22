@@ -60,7 +60,15 @@ public class DebitCardServiceImpl implements DebitCardService {
 
     @Override
     public Mono<DebitCard> findByCardNumber(String cardNumber) {
-        return debitCardRepository.findByCardNumber(cardNumber);
+        return debitCardRepository.findByCardNumber(cardNumber)
+            .flatMap(debitCard -> {
+                String accountNumber = debitCard.getMainBankAccount().getAccountNumber();
+                return accountProxy.findByAccountNumber(accountNumber)
+                    .flatMap(account -> {
+                        debitCard.setMainBankAccount(account);
+                        return Mono.just(debitCard);
+                    });
+            });
     }
 
     private Mono<Void> checkConditions(DebitCard debitCard) {
