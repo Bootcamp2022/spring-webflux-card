@@ -3,10 +3,5 @@ spring:
     name: service-card
   profiles:
     active:
-    - dev
-  cloud:
-    config:
-      profile: dev
-  config:
-    import: optional:configserver:http://localhost:8086
+    - azure
     

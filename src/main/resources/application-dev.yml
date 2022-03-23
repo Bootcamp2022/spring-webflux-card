@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-card
+  cloud:
+    config:
+      profile: dev
+  config:
+    import: optional:configserver:http://localhost:8086
+    
