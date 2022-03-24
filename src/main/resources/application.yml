@@ -3,5 +3,5 @@ spring:
     name: service-card
   profiles:
     active:
-    - azure
+    - dev #(2) dev, azure
     
